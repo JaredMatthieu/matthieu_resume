@@ -65,13 +65,45 @@ html{
 	
 }
 
-.about_me {
-	width: 500px;
+.personal_info {
+	display: flex;
+}
+.personal_info h3{
+	margin-top: 0;
 }
 
-.personal_info p{
+.about_me {
+	align-self: left;
+	flex: 0 0 60%;
+	margin-top: 10px;
+	margin-right: 20px;
+	border: 2px solid #faebd7;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+
+
+.about_me p{
 	text-align: justify;
 	padding-bottom: 5px;
 }
 
+.personal_experiences{
+	flex: 0 0 20%;
+	align-self: right;
+	margin-left: auto;
+	margin-top: 10px;
+	border: 2px solid #faebd7;
+	padding: 15px;
+	border-radius: 5px;
 
+}
+
+.experience_item{
+	font-size: 0.9rem;
+}
+
+.experience_year{
+	
+}
