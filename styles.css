@@ -64,9 +64,13 @@ html{
 	
 }
 
+.personal_info {
+	width: 500px;
+}
 
-
-<!--SIR PWEDE BANG AFRTER NLNG KNG UNDAS BREAK
-    NAGAADAL PA AKO SIR FROM SCRATCH AHHHHHHHHH-->
+.personal_info p{
+	text-align: justify;
+	padding-bottom: 5px;
+}
 
 
