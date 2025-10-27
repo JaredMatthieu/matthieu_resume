@@ -74,7 +74,7 @@ html{
 
 .about_me {
 	align-self: left;
-	flex: 0 0 60%;
+	flex: 0 0 80%;
 	margin-top: 10px;
 	margin-right: 20px;
 	border: 2px solid #faebd7;
@@ -90,7 +90,7 @@ html{
 }
 
 .personal_experiences{
-	flex: 0 0 38%;
+	flex: 0 0 18%;
 	align-self: right;
 	margin-left: auto;
 	margin-top: 10px;
