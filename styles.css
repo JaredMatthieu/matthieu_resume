@@ -18,22 +18,26 @@ html{
 	width: 150px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 1rem;
 	padding-bottom: 0px;
+	
 }
 
 .profile_info h1{
 	text-align: center;
-	margin: 0 0 10px 0;
+	margin: 0 0 7px 0;
+	line-height: 20px;
 }
 
 .profile_info h2{
 	text-align: center;
-	margin: 0 0 10px 0;
+	margin: 0 0 8px 0;
 }
 
 .profile_info h3{
 	text-align: center;
-	margin: 0 0 10px 0;
+	margin: 0 0 15px 0;
+	line-height: 10px;
 }
 
 .profile_socials {
@@ -78,10 +82,10 @@ html{
 
 .about_me {
 	align-self: left;
-	flex: 0 0 80%;
+	flex: 0 0 75%;
 	margin-top: 10px;
 	margin-right: 20px;
-	border: 2px solid #faebd7;
+	border: .15rem solid #faebd7;
 	padding: 15px;
 	border-radius: 5px;
 }
@@ -94,20 +98,28 @@ html{
 }
 
 .personal_experiences{
-	flex: 0 0 18%;
-	align-self: right;
+	flex: 0 0 23%;
 	margin-left: auto;
 	margin-top: 10px;
-	border: 2px solid #faebd7;
+	border: .15rem solid #faebd7;
 	padding: 15px;
 	border-radius: 5px;
 
 }
 
 .experience_item{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 	font-size: 0.9rem;
 }
 
-.experience_year{
-	
+.experience_item p{
+	margin-left: 0;
+}
+
+.experience_item span{
+	margin-left: auto;
+	margin-right: 0px;
+	justify-self: right;
 }
