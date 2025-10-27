@@ -3,14 +3,14 @@
 	src: url(fonts/Satoshi-Variable.ttf);
 }
 
-html{
-	margin-left: 30%;
-	margin-right: 30%;
+html {
+  padding-top: 1%;
 	font-family: fontSatoshi;
 	background-color: rgb(32, 29, 29);
 	color: #faebd7;
 }
 
+body {}
 
 .profile_info img {
 	display: block;
@@ -18,22 +18,25 @@ html{
 	width: 150px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 1rem;
 	padding-bottom: 0px;
 }
 
-.profile_info h1{
+.profile_info h1 {
 	text-align: center;
-	margin: 0 0 10px 0;
+	margin: 0 0 7px 0;
+	line-height: 20px;
 }
 
-.profile_info h2{
+.profile_info h2 {
 	text-align: center;
-	margin: 0 0 10px 0;
+	margin: 0 0 8px 0;
 }
 
-.profile_info h3{
+.profile_info h3 {
 	text-align: center;
-	margin: 0 0 10px 0;
+	margin: 0 0 15px 0;
+	line-height: 10px;
 }
 
 .profile_socials {
@@ -65,49 +68,90 @@ html{
   height: 20px;
   display: block;
   background: transparent;
-	
-	
 }
 
-.personal_info {
-	display: flex;
+.content_wrapper {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
-.personal_info h3{
+
+.first_column {
+	display: flex;
+  justify-content: space-between;
+  align-items: stretch; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.first_column h3 {
 	margin-top: 0;
 }
 
 .about_me {
-	align-self: left;
-	flex: 0 0 80%;
+  flex: 0 0 69.5%;
 	margin-top: 10px;
-	margin-right: 20px;
-	border: 2px solid #faebd7;
+	border: .15rem solid #faebd7;
 	padding: 15px;
 	border-radius: 5px;
+  box-sizing: border-box;
 }
 
-
-
-.about_me p{
+.about_me p {
 	text-align: justify;
-	padding-bottom: 5px;
 }
 
-.personal_experiences{
-	flex: 0 0 18%;
-	align-self: right;
-	margin-left: auto;
+.personal_experiences {
+  flex: 0 0 30%;
 	margin-top: 10px;
-	border: 2px solid #faebd7;
+	border: .15rem solid #faebd7;
 	padding: 15px;
 	border-radius: 5px;
-
+	box-sizing: border-box;
 }
 
-.experience_item{
+.experience_item {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 	font-size: 0.9rem;
 }
 
-.experience_year{
-	
+.experience_item h4 {
+  margin: 0 0 5px 0; 
 }
+
+.experience_item p {
+	margin: 0 0 15px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.experience_details {
+  max-width: 60%;
+}
+
+.experience_year {
+	margin-top: auto;
+	margin-bottom: 0;
+	justify-self: right;
+}
+
+.second_column {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.education_info {
+  flex: 1;
+  border: .15rem solid #faebd7;
+  padding: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
