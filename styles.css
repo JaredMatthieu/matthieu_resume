@@ -25,11 +25,13 @@ html{
 	text-align: center;
 	padding-bottom: 0;
 	line-height: 0.5;
+	margin-bottom: 1px;
 }
 
 .profile_info h2{
 	text-align: center;
 	padding-top: 0;
+	margin-bottom: 1px;
 	line-height: 0.5;
 }
 
