@@ -92,7 +92,7 @@ body {}
 }
 
 .about_me {
-  flex: 0 0 69.5%;
+  flex: 0 0 67%;
 	margin-top: 10px;
 	border: .15rem solid #faebd7;
 	padding: 15px;
@@ -162,6 +162,7 @@ body {}
 
 .education_info h3 {
 	margin-top: 0;
+  margin-bottom: 40px;
 }
 
 #line_cont {
@@ -274,3 +275,25 @@ body {}
 #main_cont span.left {
   left: -200%;
 }
+
+.third_column{
+	margin-top: 10px;
+	border: .15rem solid #faebd7;
+	padding: 15px;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.third_column h3{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.skill_wrapper{
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+
+
