@@ -145,6 +145,7 @@ body {}
   width: 100%;
   margin-top: 10px;
   box-sizing: border-box;
+  align-items: stretch;
 }
 
 .education_info {
@@ -153,5 +154,123 @@ body {}
   padding: 15px;
   border-radius: 5px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: auto;
 }
 
+.education_info h3 {
+	margin-top: 0;
+}
+
+#line_cont {
+  width: 100%;
+  height: 40px; /* more stable than % height */
+  position: relative;
+  margin-bottom: 0px;
+}
+
+#line{
+  height: 6px;
+  width: 70%;
+  background: white;
+  border-radius: 5px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+#span {
+  display: none;
+  width: 70%;
+  margin: auto;
+  margin-top: 25%;
+  text-align: center;
+  color: white;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background: rgb(32, 29, 29);
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #faebd7;
+  cursor: pointer;
+  &:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #faebd7;
+    position: absolute;
+    border-radius: 100%;
+    top: 2px;
+    left: 2px;
+    display: none;
+  }
+  .popupSpan {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    white-space: nowrap;
+    display: inline-block;
+    color: #faebd7;
+    position: absolute;
+    top: 20px;
+    left: -75px;
+    display: none;
+    transition: all 0.1s ease-out;
+  }
+  &.hover:before, &.active:before {
+    display: block;
+  }
+  &.hover .popupSpan, &.active .popupSpan {
+    display: block;
+  }
+  &.active .popupSpan {
+    top: -40px;
+  }
+}
+
+#line_cont, #main_cont {
+  flex-shrink: 0;
+}
+
+#main_cont {
+  position: relative;
+  width: 100%;
+  color: #faebd7;
+  font-size: 1.05rem;
+  text-align: center;
+  transition: all 0.2s ease-out;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  min-height: 60px;
+  overflow: hidden; 
+}
+
+#main_cont span {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 200%; 
+  transition: all 0.3s ease-out;
+  white-space: nowrap;
+}
+
+#main_cont span.center {
+  left: 0;
+}
+
+#main_cont span.right {
+  left: 200%;
+}
+
+#main_cont span.left {
+  left: -200%;
+}
